@@ -1,0 +1,52 @@
+/node_modules
+.github/**/node_modules
+/coverage
+/cli
+/lib
+/peers
+/example
+.vscode
+.DS_Store
+.parcel-cache
+# tailwind.config.js
+# index.html
+yarn.lock
+yarn-error.log
+types/generated/*.d.ts
+package-lock.json
+.turbo
+
+# Perf related files
+isolate*.log
+
+# Generated files
+/src/corePluginList.js
+
+# Generated files during tests
+/tests/evaluate-tailwind-functions.test.html
+
+
+# flowbite
+dist/
+build/
+_gh_pages/
+static/*.css
+static/*.js
+static/*.map
+.DS_Store
+yarn-error.log
+/.idea
+.hugo_build.lock
+
+# flask
+.idea/
+.vscode/
+__pycache__/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+docs/_build/
+dist/
+venv/
+base/
