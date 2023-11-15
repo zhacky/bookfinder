@@ -46,7 +46,13 @@ class BookForm(FlaskForm):
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+    if session.get('logged_in'):
+
+        books = Book.query.all()    
+        user_id = session.get('user_id')
+        user_email = session.get('user_email')
+        
+    return render_template('index.html', email=user_email if user_email else None)
 
 @app.route("/login", methods=['GET','POST'])
 def login():
